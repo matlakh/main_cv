@@ -18,8 +18,6 @@
 </head>
 
 <body>
-
-
     <nav class="nav">
         <div class="container">
             <ul class="nav__list">
@@ -30,8 +28,20 @@
                 <li class="nav__list--item"><a href="#portfolio">Портфолио</a></li>
             </ul>
         </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li class="nav__list--item"><a class="menu__item" href="#main-info">Личная информация</a></li>
+                <li class="nav__list--item"><a class="menu__item" href="#expirience">Опыт</a></li>
+                <li class="nav__list--item"><a class="menu__item" href="#education">Образование</a></li>
+                <li class="nav__list--item"><a class="menu__item" href="#skills">Навыки</a></li>
+                <li class="nav__list--item"><a class="menu__item" href="#portfolio">Портфолио</a></li>
+            </ul>
+        </div>
     </nav>
-
     <header class="header">
         <div class="header-wrapper">
             <div class="header__content">
@@ -40,18 +50,16 @@
             </div>
         </div>
     </header>
-
     <section id='main-info' class="section-wrapper">
         <div class="main-info">
             <div class="main-info__photo">
                 <img src="img/main_photo.jpg" alt="main_photo">
             </div>
             <div class="main-info__content">
-                <p class="section-text">Мне 18 лет, студентка 2-го курса.<br>
+                <p class="section-text">Мне 18 лет, заканчиваю 2-ой курс.<br>
                     С личных качеств могу выделить усидчивость, скурпулёзность, ответственность, коммуникабельность.<br>
                     Свободное время провожу в кругу семьи/друзей, читаю много полезной литературы, развиваю свои навыки,
-                    учу
-                    что-то новое.
+                    учу английский язык.
                 </p>
                 <ul class="contact__list">
                     <li class="contact__list--item">
@@ -76,7 +84,6 @@
             </div>
         </div>
     </section>
-
     <section id="expirience" class="section-wrapper">
         <h2>Опыт</h2>
         <div class="slider swiper-container">
@@ -107,7 +114,6 @@
         </div>
 
     </section>
-
     <section id="education" class="section-wrapper">
         <h2>Образование</h2>
         <div class="slider swiper-container">
@@ -135,11 +141,9 @@
             </button>
         </div>
     </section>
-
     <section id="skills" class="section-wrapper">
         <h2>Навыки</h2>
         <div class="skills">
-
             <ul class="skills__list">
                 <h3 class="list-title">Технические</h3>
                 <li class="skills__item"><img src="img/html.svg" alt="html">
@@ -160,8 +164,10 @@
                 <li class="skills__item"><img src="img/php.svg" alt="html">
                     <p>PHP(base)</p>
                 </li>
+                <li class="skills__item"><img src="img/english.png" alt="html">
+                    <p>Английский (средний)</p>
+                </li>
             </ul>
-
             <ul class="skills__list-second">
                 <h3 class="list-title">Человеческие</h3>
                 <li class="skills__item-second">
@@ -182,8 +188,7 @@
             </ul>
         </div>
     </section>
-
-    <section id="portfolio" class="section-wrapper">
+    <section id="portfolio" class="section-wrapper width">
         <h2>Портфолио</h2>
         <div class="portfolio">
             <ul class="portfolio__list">
@@ -205,9 +210,6 @@
             </ul>
         </div>
     </section>
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
