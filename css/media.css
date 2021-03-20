@@ -25,7 +25,20 @@
         margin-left: 0px;
     }
 }
-
+@media (max-width:880px){
+    a:hover.link span {
+        visibility: hidden;
+        margin-left: 0px;
+    }
+    a.link img {
+        width: 0px;
+        height: auto;
+    }
+    a.link span{
+        height: 0px;
+        width: 0px;
+    }
+}
 @media (max-width:800px) {
     .section-wrapper {
         height: auto;
@@ -83,7 +96,7 @@
         padding: 10px;
     }
     .width{
-        height: 100vh;
+        height: 100%;
     }
 }
 
