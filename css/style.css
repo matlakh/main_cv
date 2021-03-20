@@ -248,8 +248,89 @@ header {
     text-align: right;
 }
 
-.skills__list-second,.skills__item-second {
+.skills__list-second, .skills__item-second {
     text-align: right;
     margin-bottom: 15px;
     line-height: 26px;
+}
+
+.portfolio {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio__list {
+    margin: 0 auto;
+}
+
+.portfolio__list--item {
+    display: flex;
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.portfolio__list--item a {
+    color: rgb(8, 8, 10);
+    margin-right: 30px;
+}
+
+.portfolio__list--item p {
+    font-size: 20px;
+}
+
+.element {
+    margin-left: 60px;
+}
+
+.element-1 {
+    margin-left: 5px;
+}
+
+#img {
+    position: absolute;
+}
+
+a.link {
+    position: relative;
+    display: inline;
+}
+
+a.link span {
+    position: absolute;
+    width: 140px;
+    color: white;
+    background: #CCC;
+    height: 100px;
+    line-height: 64px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 6px;
+}
+
+a.link span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #000000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+a:hover.link span {
+    visibility: visible;
+    opacity: 0.9;
+    bottom: 30px;
+    left: 50%;
+    margin-left: 90px;
+    z-index: 999;
+}
+
+a.link img{
+    width: 350px;
+    height: auto;
 }
